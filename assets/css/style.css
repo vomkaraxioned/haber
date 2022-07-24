@@ -120,9 +120,12 @@ nav { display: flex;}
 .logo { padding-right:  7%;}
 
 .navigation {
-  width: 55%;
+  width: 60%;
   padding: 35px 0;
+  display: flex;
 }
+
+.icons { display: flex;}
 
 .nav-item { margin-right: 5%;}
 
@@ -168,7 +171,7 @@ nav { display: flex;}
   text-align: right;
 }
 
-.icons a { padding-right: 5%;}
+.icons .icon { padding-right: 5%;}
 
 .icon {
   color: #737e85;
@@ -585,11 +588,14 @@ footer { background-color: #515a63;}
   display: flex;
 }
 
-.contact-links {  padding: 102px 0;}
+.contact-links {  
+  padding: 102px 0;
+  display: flex;
+}
 
 .contact-link {
-  width: 60%;
-  padding: 0 80%;
+  width: 30%;
+  padding: 0 ;
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -605,6 +611,7 @@ footer { background-color: #515a63;}
   font-family: 'FontAwesome';
   font-weight: 900;
   text-indent: -9999px;
+  box-shadow: 2px 2px 2px 2px #737e85;
 }
 
 .map {
@@ -631,9 +638,24 @@ footer { background-color: #515a63;}
   text-transform: uppercase;
 }
 
+.contact-icons .icon {
+  color: #bc542e;
+  font-family: 'FontAwesome';
+  font-size: 20px;
+  text-indent: -9999px;
+  font-weight: 900;
+}
+
 .t::before{
-  color: #da6226;
+  text-indent: 1px;
+  float: right;
   content: '\e14d';
+}
+
+.tweet::before{
+  text-indent: 1px;
+  float: right;
+  content: '\f081';
 }
 
 .gmap {
@@ -653,6 +675,12 @@ footer { background-color: #515a63;}
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
+  .navigation { display: none;}
+
+  .icons { display: none;}
+
+  .logo { padding-right: 80%;}
+  .menu { display: inline-block;}
 
 
 }  
