@@ -103,6 +103,12 @@ li {
   width: 92%; 
   margin: 0 auto;
 }
+
+.btn {
+  padding: 15px 5%;
+  font-size: 16px;
+  text-align: center;
+}
 /*=================================
   Header styling starts here
 =================================*/
@@ -115,7 +121,7 @@ nav { display: flex;}
 
 .navigation {
   width: 55%;
-  padding: 40px 0;
+  padding: 35px 0;
 }
 
 .nav-item { margin-right: 5%;}
@@ -140,21 +146,60 @@ nav { display: flex;}
 }
 .nav-active a { color: #bc542e;}
 
-.icons {
-  width: 30%;
-  padding: 40px 0;
+.menu {
+  display: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'FontAwesome';
+  text-indent: -9999px;
+  font-weight: 900;
 }
 
+.menu::before{
+  text-indent: 1px;
+  font-size: 20px;
+  content: '\f0c9';
+  float: right;
+}
+.icons {
+  width: 30%;
+  padding: 35px 0;
+  text-align: right;
+}
+
+.icons a { padding-right: 5%;}
+
 .icon {
-  text-indent: -9999px;
+  color: #737e85;
+  font-family: 'FontAwesome';
+  font-size: 0px;
+  font-weight: 900;
 }
 
 .twitter::before{
-  font-family: 'FontAwesome';
-  font-size: 20px;
-  font-weight: 900;
-  text-indent: 1px;
+  font-size: 28px;
   content: '\f081';
+}
+
+.youtube::before{
+  font-size: 28px;
+  content: '\f167';
+}
+
+.wifi::before{
+  font-size: 28px;
+  content: '\f1eb';
+}
+
+.facebook::before{
+  font-size: 28px;
+  content: '\f09a';
+}
+
+.gmail::before{
+  font-size: 28px;
+  content: '\f0d4';
 }
 
 
@@ -208,6 +253,9 @@ nav { display: flex;}
   top: 20%;
   right: 5%;
 }
+
+.control:hover { color: #404952;}
+
 .title {
   color: #fff;
   font-size: 32px;
@@ -235,7 +283,8 @@ nav { display: flex;}
 
 .goal {
   width: 21%;
-  padding-right: 10%;
+  padding:150px  10% 0 0;
+  position: relative;
   text-align: center;
 }
 
@@ -243,17 +292,283 @@ nav { display: flex;}
 
 .goal-title {
   width: 60%;
-  padding: 0 20%;
+  padding: 0 20% 35px  20% ;
   color: #404f59;
   font-size: 16px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  line-height: 1.5;
 }
 
+.description {
+  padding-bottom: 25px;
+  color: #b4b7be;
+  font-size: 12px;
+  font-weight: 900;
+}
 
+.read {
+  border: 1px solid #b7bdc1;
+  color: #454d59;
+  font-weight: 700;
+  text-transform: capitalize;
 
+}
 
+.read:hover {
+  background-color: #454d59;
+  color: #fff;
+}
+
+.goal .icon {
+  display: block;
+  padding: 30px ;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  background-color: #da6226;
+  color: #fff;
+  font-size: 0;
+  font-family: 'FontAwesome';
+  font-weight: 900;
+}
+/* 
+.money::before {
+  font-size: 20px;
+  content: '\f53a';
+}
+
+.emap::before {
+  font-size: 20px;
+  content: '\f555';
+}
+
+.graph::before {
+  font-size: 20px;
+  content: '\f555';
+}
+
+.earth::before {
+  font-size: 20px;
+  content: '\f57c';
+} */
+/*focus ends*/
+
+/*advice start*/
+
+.advice {
+  padding: 90px 0 60px 0;
+  background-color: #e9edf1;
+}
+
+.advice-title {
+  color: #404b52;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advice-description {
+  padding:33px 0 53px 0;
+  color: #404b52;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.cards { display: flex;}
+
+.card { 
+  padding: 10px 1% 40px 1%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.card:nth-child(2) { margin: 0 5%;}
+
+.card-title {
+  padding: 45px 0 15px 0;
+  color: #bc542e;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.card-info {
+  padding-bottom: 40px;
+  color: #b4b7be;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card a { font-size: 0;}
+
+.card a::before {
+  color: #404952;
+  font-size: 20px;
+  font-family: 'FontAwesome';
+  font-weight: 900;
+  content: '\f0a9';
+}
+
+/*advice end */
+
+/*more info start*/
+.more-information { display: flex;}
+
+.solutions {
+  width: 50%;
+  padding: 50px 8% 40px 5% ;
+  background-color: #da6226;
+}
+
+.learning {
+  width: 50%;
+  padding: 50px 5% 40px 5% ;
+  background-color: #404952;
+}
+
+.solutions-title,.learning-title {
+  padding-bottom: 35px;
+  color: #fff;
+  font-size: 30px;
+  font-size: 900;
+  text-transform: capitalize;
+}
+
+.solution {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.4;
+}
+
+.learning-info {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.learn {
+  padding: 18px 3%;
+  margin-top:20px ;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 700;
+}
+
+.solutions .learn:hover {
+  background-color: #fff;
+  color: #da6226;
+}
+
+.learning .learn:hover {
+  background-color: #fff;
+  color: #404952;
+}
+
+.brands { position: relative;}
+
+.brand-control {
+  border: none;
+  position: absolute;
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+}
+
+.prev {
+  top: 50%;
+  left: 0;
+}
+
+.nxt {
+  top: 50%;
+  right: 0;
+}
+
+/*more info end here*/
+
+/*contact start*/
+
+form { display: flex;}
+
+.contact {
+  padding: 80px 2% 50px 2%;
+  display: flex;
+  background-color: #cdcdcd;
+}
+
+.contact-title {
+  padding-bottom: 40px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.personal-details { 
+  width: 30%;
+  display: inline-block;
+}
+
+.detail {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 2%;
+  border:1px solid #fff;
+  background-color: transparent;
+}
+
+.error { display: none;}
+
+.message {
+  width: 60%;
+  padding-left: 5%;
+  display: inline-block;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 5%;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.submit {
+  width: 15%;
+  margin-top: 10px;
+  margin-left: 95%;
+}
+
+input[type=submit]{
+  padding: 15px 2%;
+  border: none;
+  background-color: #bc542e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+  background-color: #fff;
+  color: #bc542e;
+}
+
+/*contact end here*/
 
 /*=================================
   main styling ends here
@@ -261,10 +576,71 @@ nav { display: flex;}
 
 /*=================================
   footer styling starts here
-=================================*/ 
+=================================*/
 
+footer { background-color: #515a63;}
 
+.locate {
+  padding: 20px 0 150px 0;
+  display: flex;
+}
 
+.contact-links {  padding: 102px 0;}
+
+.contact-link {
+  width: 60%;
+  padding: 0 80%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact-icons {
+  padding: 20px;
+  margin-right: 40%;
+  border-radius: 50%;
+  background-color: #da6226;
+  color: #fff;
+  font-family: 'FontAwesome';
+  font-weight: 900;
+  text-indent: -9999px;
+}
+
+.map {
+  content: '\f3c5';
+}
+
+.contact-links a:nth-child(2) {margin: 0 10%;}
+
+.get-connect {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.copyright span {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.t::before{
+  color: #da6226;
+  content: '\e14d';
+}
+
+.gmap {
+  width: 40%;
+  padding-left: 30%;
+  display: inline-block;
+}
 
 
 

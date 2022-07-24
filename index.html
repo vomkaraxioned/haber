@@ -40,12 +40,13 @@
             <li class="nav-item"><a href="#FIXME" title="contacts">contacts</a></li>
           </ul>
           <ul class="icons">
-            <a href="#FIXME" title="link"><li class="icon twitter">link</li></a>
-            <a href="#FIXME" title="link"><li class="icon youtube">link</li></a>
-            <a href="#FIXME" title="link"><li class="icon wifi">link</li></a>
-            <a href="#FIXME" title="link"><li class="icon facebook">link</li></a>
-            <a href="#FIXME" title="link"><li class="icon gmail">link</li></a>
+            <li class="icon twitter"><a href="#FIXME" title="link">link</a></li>
+            <li class="icon youtube"><a href="#FIXME" title="link">link</a></li>
+            <li class="icon wifi"><a href="#FIXME" title="link">link</a></li>
+            <li class="icon facebook"><a href="#FIXME" title="link">link</a></li>
+            <li class="icon gmail"><a href="#FIXME" title="link">link</a></li>
           </ul>
+          <button class="menu">menu</button>
         </nav>
       </div>
     </header>
@@ -71,6 +72,7 @@
           <h2 class="focus-title">our focus is our client's success</h2>
           <ul class="goals">
             <li class="goal">
+              <span class="icon emap">a</span>
               <h3 class="goal-title">private banking</h3>
               <p class="description">
                 Contrary to popular belief, Lorem Ipsum is not simply random text. 
@@ -80,6 +82,7 @@
               <a href="#FIXME" title="read more" class="btn read">read more</a>
             </li>
             <li class="goal">
+              <span class="icon graph">a</span>
               <h3 class="goal-title">private banking</h3>
               <p class="description">
                 Contrary to popular belief, Lorem Ipsum is not simply random text. 
@@ -89,6 +92,7 @@
               <a href="#FIXME" title="read more" class="btn read">read more</a>
             </li>
             <li class="goal">
+              <span class="icon money">a</span>
               <h3 class="goal-title">private banking</h3>
               <p class="description">
                 Contrary to popular belief, Lorem Ipsum is not simply random text. 
@@ -98,6 +102,7 @@
               <a href="#FIXME" title="read more" class="btn read">read more</a>
             </li>
             <li class="goal">
+              <span class="icon earth">a</span>
               <h3 class="goal-title">private banking</h3>
               <p class="description">
                 Contrary to popular belief, Lorem Ipsum is not simply random text. 
@@ -122,7 +127,7 @@
               <figure><img src="https://via.placeholder.com/374x217/FF0000/808080?text=%7C%7C" alt="invest"></figure>
               <h3 class="card-title">aut perfect</h3>
               <p class="card-info">
-                Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                Contrary to popular belief, Lorem Ipsum is not simply random text.Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked 
               </p>
               <a href="#FIXME" title="more info">arrow</a>
             </li>
@@ -130,7 +135,7 @@
               <figure><img src="https://via.placeholder.com/374x217/FF0000/808080?text=%7C%7C" alt="invest"></figure>
               <h3 class="card-title">aut perfect</h3>
               <p class="card-info">
-                Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                Contrary to popular belief, Lorem Ipsum is not simply random text.Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked 
               </p>
               <a href="#FIXME" title="more info">arrow</a>
             </li>
@@ -138,7 +143,7 @@
               <figure><img src="https://via.placeholder.com/374x217/FF0000/808080?text=%7C%7C" alt="invest"></figure>
               <h3 class="card-title">aut perfect</h3>
               <p class="card-info">
-                Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                Contrary to popular belief, Lorem Ipsum is not simply random text.Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked 
               </p>
               <a href="#FIXME" title="more info" >arrow</a>
             </li>
@@ -163,7 +168,7 @@
                 Contrary to popular belief, Lorem Ipsum
               </li>
             </ul>
-            <a href="#FIXME" title="learn more" class="btn learn">learn more</a>
+            <a href="#FIXME" title="learn more" class="btn learn">Learn more</a>
           </div>
         </div>
         <div class="learning">
@@ -184,14 +189,14 @@
               Contrary to popular belief, Lorem Ipsum is not simply random text. 
               It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
             </p>
-            <a href="#FIXME" title="learn more" class="btn learn">learn more</a>
+            <a href="#FIXME" title="learn more" class="btn learn">Learn more</a>
           </div>
         </div>
       </section>
       <div class="brands">
         <figure><img src="https://via.placeholder.com/1366x176/FF0000/808080?text=%7C%7C" alt="brands"></figure>
-        <button class="brand-control">&lt;</button>
-        <button class="brand-control">&gt;</button>
+        <button class="brand-control prev">&lt;</button>
+        <button class="brand-control nxt">&gt;</button>
       </div>
       <section class="contact">
        <div class="wrapper">
@@ -200,28 +205,28 @@
             <ul class="personal-details">
               <li class="detail">
                 <div class="input">
-                  <input type="text" name="name" placeholder="name:">
+                  <input type="text" name="name" placeholder="Name:">
                   <span class="error">err</span>
                 </div>
               </li>
               <li class="detail">
                 <div class="input">
-                  <input type="email" name="email" placeholder="email:">
+                  <input type="email" name="email" placeholder="Email:">
                   <span class="error">err</span>
                 </div>
               </li>
               <li class="detail">
                 <div class="input">
-                  <input type="tel" name="phone" placeholder="phone:">
+                  <input type="tel" name="phone" placeholder="Phone:">
                   <span class="error">err</span>
                 </div>
               </li>
             </ul>
             <div class="message">
-              <textarea name="txt"  cols="30" rows="10"></textarea>
-            </div>
-            <div class="submit">
-              <input type="submit" value="send">
+              <textarea name="txt"  cols="30" rows="9" placeholder="Message"></textarea>
+              <div class="submit">
+                <input type="submit" value="send">
+              </div>
             </div>
           </form>
        </div>
@@ -233,24 +238,24 @@
     <footer>      
       <div class="wrapper">
         <ul class="contact-links">
-          <li class="contact-link"><a href="#FIXME" title="location" class="map">newyork</a></li>
-          <li class="contact-link"><a href="mailto:email@untitled" title="email" class="map">contact@untitled</a></li>
-          <li class="contact-link"><a href="tel:200224578" title="email" class="map">call us +1800 603 6035</a></li>
+          <li class="contact-link map"><a href="#FIXME" title="location" ><span class="contact-icons">a</span>newyork</a></li>
+          <li class="contact-link email"><a href="mailto:email@untitled" title="email" ><span class="contact-icons">a</span>contact@untitled</a></li>
+          <li class="contact-link phone"><a href="tel:200224578" title="phone" ><span class="contact-icons">a</span>call us +1800 603 6035</a></li>
         </ul>
       </div>
-      <div class="wrapper">
+      <div class="wrapper locate">
        <div class="get-connect">
         <p class="copyright"><span>haber</span>&copy;2022 privacy policy</p>
         <ul class="connect-icons">
-          <li class="twitter">a</li>
-          <li class="twitter">a</li>
-          <li class="twitter">a</li>
-          <li class="twitter">a</li>
-          <li class="twitter">a</li>
-          <li class="twitter">a</li>
+          <li class="icon t">a</li>
+          <li class="icon tweet">a</li>
+          <li class="icon yt">a</li>
+          <li class="icon wi">a</li>
+          <li class="icon fb">a</li>
+          <li class="icon g+">a</li>
         </ul>
        </div>
-       <figure><img src="https://via.placeholder.com/611x215/FF0000/808080?text=%7C%7C" alt="map"></figure>
+       <figure class="gmap"><img src="https://via.placeholder.com/611x215/FF0000/808080?text=%7C%7C" alt="map"></figure>
       </div>
     </footer>
     <!--footer section end-->
