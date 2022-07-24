@@ -100,12 +100,63 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 92%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
+
+header { background-color: #414c52;}
+
+nav { display: flex;}
+
+.logo { padding-right:  7%;}
+
+.navigation {
+  width: 55%;
+  padding: 40px 0;
+}
+
+.nav-item { margin-right: 5%;}
+
+.nav-item a {
+  position: relative;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-item:hover a::before {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: #bc542e;
+  font-family: 'FontAwesome';
+  font-size: 16px;
+  font-weight: 900;
+  content: '\f0d7';
+}
+.nav-active a { color: #bc542e;}
+
+.icons {
+  width: 30%;
+  padding: 40px 0;
+}
+
+.icon {
+  text-indent: -9999px;
+}
+
+.twitter::before{
+  font-family: 'FontAwesome';
+  font-size: 20px;
+  font-weight: 900;
+  text-indent: 1px;
+  content: '\f081';
+}
+
 
 
 
@@ -119,9 +170,86 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+/*carousel start */
+.carousel { position: relative;}
 
+.carousel-info {
+  width: 60%;
+  padding: 21px 0;
+  position: absolute;
+  left: 20%;
+  bottom:0;
+  background-color: #bc542e;
+}
 
+.carousel-title {
+  width: 60%;
+  padding: 0 20%;
+  position:relative;
+  text-transform: uppercase;
+  text-align: center;
+}
 
+.control {
+  border: none;
+  position: absolute;
+  background-color: transparent;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.previous { 
+  top: 20%;
+  left: 5%;
+}
+
+.next { 
+  top: 20%;
+  right: 5%;
+}
+.title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+/*carousel end */
+
+/*focus start */
+
+.focus { padding: 90px 0 83px 0;}
+
+.focus-title { 
+  color: #404f59;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.goals {
+  padding-top: 50px ;
+  display: flex;
+}
+
+.goal {
+  width: 21%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+.goal:nth-last-child(1) { padding-right: 0;}
+
+.goal-title {
+  width: 60%;
+  padding: 0 20%;
+  color: #404f59;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 
 
