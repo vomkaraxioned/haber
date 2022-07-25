@@ -336,28 +336,45 @@ nav { display: flex;}
   color: #fff;
   text-indent: -9999px;
   font-family: 'FontAwesome';
+  font-size: 24px;
   font-weight: 900;
 }
-/* 
+
 .money::before {
-  font-size: 20px;
-  content: '\f53a';
+  position: absolute;
+  top: 20px;
+  right:30%;
+  text-indent: 1px;
+  float: right;
+  content: '\f099';
 }
 
 .emap::before {
-  font-size: 20px;
-  content: '\f555';
+  position: absolute;
+  top: 20px;
+  right:30%;
+  text-indent: 1px;
+  float: right;
+  content: '\f099';
 }
 
 .graph::before {
-  font-size: 20px;
-  content: '\f555';
+  position: absolute;
+  top: 20px;
+  right:30%;
+  text-indent: 1px;
+  float: right;
+  content: '\f099';
 }
 
 .earth::before {
-  font-size: 20px;
-  content: '\f57c';
-} */
+  position: absolute;
+  top: 20px;
+  right:30%;
+  text-indent: 1px;
+  float: right;
+  content: '\f099';
+}
 /*focus ends*/
 
 /*advice start*/
@@ -410,20 +427,19 @@ nav { display: flex;}
   text-align: center;
 }
 
-.card a { font-size: 0;}
+.card a { text-indent: -9999px;}
 
 .card a::before {
   color: #404952;
   font-size: 20px;
   font-family: 'FontAwesome';
   font-weight: 900;
+  text-indent: 1px;
+  float: right;
   content: '\f0a9';
 }
 
-.card a:hover {
-  background-color: #fff;
-  color: #404952;
- }
+.card a:hover {color: #da6226;}
 
 /*advice end */
 
@@ -492,6 +508,8 @@ nav { display: flex;}
   color: #fff;
   font-size: 20px;
 }
+
+.brand-control:hover { color: #000;}
 
 .prev {
   top: 50%;
