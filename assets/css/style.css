@@ -173,39 +173,39 @@ nav { display: flex;}
 
 .icons .icon { padding-right: 5%;}
 
-.icon {
+.icon a{
   color: #737e85;
   font-family: 'FontAwesome';
   font-size: 0px;
   font-weight: 900;
 }
 
-.twitter::before{
+.twitter a::before{
   font-size: 28px;
   content: '\f081';
 }
 
-.youtube::before{
+.youtube a::before{
   font-size: 28px;
   content: '\f167';
 }
 
-.wifi::before{
+.wifi a::before{
   font-size: 28px;
   content: '\f1eb';
 }
 
-.facebook::before{
+.facebook a::before{
   font-size: 28px;
   content: '\f09a';
 }
 
-.gmail::before{
+.gmail a::before{
   font-size: 28px;
   content: '\f0d4';
 }
 
-
+.icon a:hover { color: #bc542e;}
 
 
 
@@ -287,7 +287,6 @@ nav { display: flex;}
 .goal {
   width: 21%;
   padding:150px  10% 0 0;
-  position: relative;
   text-align: center;
 }
 
@@ -325,15 +324,17 @@ nav { display: flex;}
 }
 
 .goal .icon {
+  width: 25%;
   display: block;
-  padding: 30px ;
+  padding: 20px 3% ;
+  margin-bottom: 10px;
   border-radius: 50%;
-  position: absolute;
+  position: relative;
   top: 0;
-  left: 25%;
+  left: 35%;
   background-color: #da6226;
   color: #fff;
-  font-size: 0;
+  text-indent: -9999px;
   font-family: 'FontAwesome';
   font-weight: 900;
 }
@@ -418,6 +419,11 @@ nav { display: flex;}
   font-weight: 900;
   content: '\f0a9';
 }
+
+.card a:hover {
+  background-color: #fff;
+  color: #404952;
+ }
 
 /*advice end */
 
@@ -595,16 +601,21 @@ footer { background-color: #515a63;}
 
 .contact-link {
   width: 30%;
-  padding: 0 ;
   color: #fff;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
+
+.contact-link:nth-last-child(1) { 
+  width: 17%;
+  text-align: right;}
+
 
 .contact-icons {
   padding: 20px;
-  margin-right: 40%;
+  margin-right: 10%;
   border-radius: 50%;
   background-color: #da6226;
   color: #fff;
@@ -619,6 +630,8 @@ footer { background-color: #515a63;}
 }
 
 .contact-links a:nth-child(2) {margin: 0 10%;}
+
+.contact-link a { color: #fff;}
 
 .get-connect {
   width: 35%;
@@ -644,6 +657,14 @@ footer { background-color: #515a63;}
   font-size: 20px;
   text-indent: -9999px;
   font-weight: 900;
+}
+
+.connect-icon {
+  color: #bc542e;
+  font-family: 'FontAwesome';
+  font-size: 24px;
+  font-weight: 900;
+  text-indent: -9999px;
 }
 
 .t::before{
