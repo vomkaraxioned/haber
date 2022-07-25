@@ -618,7 +618,7 @@ footer { background-color: #515a63;}
 }
 
 .contact-link {
-  width: 30%;
+  width: 40%;
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -626,21 +626,26 @@ footer { background-color: #515a63;}
   text-align: center;
 }
 
-.contact-link:nth-last-child(1) { 
-  width: 17%;
-  text-align: right;}
+.contact-link a{
+  width: 60%;
+}
+
+.contact-link .telephone { 
+  width: 100%;
+}
 
 
 .contact-icons {
+  width: 20%;
   padding: 20px;
-  margin-right: 10%;
+  margin-right: 20%;
+  border: 10px solid #737e85;
   border-radius: 50%;
   background-color: #da6226;
   color: #fff;
   font-family: 'FontAwesome';
   font-weight: 900;
   text-indent: -9999px;
-  box-shadow: 2px 2px 2px 2px #737e85;
 }
 
 .map {
