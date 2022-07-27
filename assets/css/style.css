@@ -120,7 +120,7 @@ nav { display: flex;}
 .logo { padding-right:  7%;}
 
 .navigation {
-  width: 60%;
+  width: 62%;
   padding: 50px 0;
   display: flex;
 }
@@ -130,7 +130,7 @@ nav { display: flex;}
   justify-content: right;
 }
 
-.nav-item { margin-right: 5%;}
+.nav-item { margin-right: 6%;}
 
 .nav-item a {
   position: relative;
@@ -289,8 +289,8 @@ nav { display: flex;}
 }
 
 .goal {
-  width: 21%;
-  padding: 0 5%;
+  width: 30%;
+  padding: 0 3%;
   text-align: center;
 }
 
@@ -331,7 +331,7 @@ nav { display: flex;}
 .goal .icon {
   width: 24%;
   display: block;
-  padding: 20px 5% ;
+  padding: 20px 2% ;
   margin-bottom: 20px;
   border-radius: 50%;
   position: relative;
