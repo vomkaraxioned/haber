@@ -184,27 +184,27 @@ nav { display: flex;}
 }
 
 .twitter a::before{
-  font-size: 28px;
+  font-size: 24px;
   content: '\f081';
 }
 
 .youtube a::before{
-  font-size: 28px;
+  font-size: 24px;
   content: '\f167';
 }
 
 .wifi a::before{
-  font-size: 28px;
+  font-size: 24px;
   content: '\f1eb';
 }
 
 .facebook a::before{
-  font-size: 28px;
+  font-size: 24px;
   content: '\f09a';
 }
 
 .gmail a::before{
-  font-size: 28px;
+  font-size: 24px;
   content: '\f0d4';
 }
 
@@ -780,7 +780,7 @@ footer { background-color: #515a63;}
 }
 
 .gmap {
-  width: 40%;
+  width: 50%;
   padding:0 ;
   display: inline-block;
   object-fit: contain;
