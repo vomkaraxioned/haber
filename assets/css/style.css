@@ -343,6 +343,7 @@ nav { display: flex;}
   font-family: 'FontAwesome';
   font-size: 24px;
   font-weight: 900;
+  text-align: center;
 }
 
 .money::before {
@@ -658,11 +659,13 @@ footer { background-color: #515a63;}
   padding: 40px;
   border: 10px solid #737e85;
   border-radius: 50%;
+  margin-right: 5%;
   position: relative;
   background-color: #da6226;
   font-family: 'FontAwesome';
   font-weight: 900;
   font-size: 0;
+  text-align: center;
 }
 
 .connect-icon:nth-last-child(1) { margin-bottom: 30px;}
@@ -941,6 +944,8 @@ footer { background-color: #515a63;}
   .solution { width: 80%;}
 
   .contact-link:nth-child(2) a{ margin-left: 0;}
+
+  .brands figure img { height: 100%;}
 }  
 
 /*media query for 540px starts here*/
@@ -1022,6 +1027,10 @@ footer { background-color: #515a63;}
   .email::before{  left: 20px; }
   
   .phone::before{  left: 25px;}
+
+  figure { height: 100%;}
+
+  .brand-control { top: 20%;}
 }  
 
 /*media query for 425px starts here*/
@@ -1080,9 +1089,20 @@ footer { background-color: #515a63;}
     font-size: 0;
   }
 
-  .contact-links { justify-items: center;}
+  .contact-links { 
+    justify-items: center;
+    align-items: center;
+  }
 
   .contact-link { width: 100%;}
 
   
 }
+
+/* media query for 320px starts here
+@media only screen and (max-width: 320px) {
+  .icon .emap {
+    right: 20%;
+    left: 20%;
+  }
+} */
