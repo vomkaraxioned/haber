@@ -570,7 +570,7 @@ form { display: flex;}
 
 input {
   width: 100%;
-  padding: 12px 2%;
+  padding: 10px 2%;
   border:2px solid #fff;
   background-color: #000;
   opacity: 0.3;
@@ -654,7 +654,7 @@ footer { background-color: #515a63;}
 
 
 
-.contact-icons {
+/* .contact-icons {
   width: 20%;
   padding: 40px;
   border: 10px solid #737e85;
@@ -668,41 +668,56 @@ footer { background-color: #515a63;}
   text-align: center;
 }
 
-.connect-icon:nth-last-child(1) { margin-bottom: 30px;}
+.connect-icon:nth-last-child(1) { margin-bottom: 30px;} */
 
-.map::before{ 
-  position: absolute;
-  top: 20px;
-  left: 30px;
+.contact-link { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icons { display: none;}
+
+.contact-link a { 
+  width: 100%;
+  display: block;
+}
+
+.contact-link a::before{
+  width: 20%;
+  padding: 25px;
+  border: 10px solid #737e85;
+  border-radius: 50%;
+  margin-right: 5%;
+  position: relative;
+  background-color: #da6226;
+  font-family: 'FontAwesome';
+  font-weight: 900;
+}
+
+.contact-link:nth-child(1) a::before {
   font-size: 30px;
-  float: right;
   content: '\f3c5';
 }
 
-.email::before{ 
-  position: absolute;
-  top: 20px;
-  left: 25px;
+.contact-link:nth-child(2) a::before {
   font-size: 30px;
-  float: right;
   content: '\f0e0';
 }
 
-.phone::before{ 
-  position: absolute;
-  top: 20px;
-  left: 30px;
+.contact-link:nth-child(3) a::before {
   font-size: 30px;
-  float: right;
   content: '\f095';
 }
 
-.us-no { display: inline-block;}
-
-.us-no span{ 
-  display: block;
-  font-size: 20px;
+.call-no { 
+  padding-left: 30%;
+  width: 50%;
+  display:inline-block;
+  font-size: 24px;
 }
+
 
 
 .contact-link a { color: #fff;}
@@ -830,8 +845,6 @@ footer { background-color: #515a63;}
     margin-bottom: 100px;
   }
 
-  .contact-link:nth-child(2) a{ margin-left: 40%;}
-
   .contact-icons {
     width: 20%;
     padding: 35px;
@@ -853,7 +866,12 @@ footer { background-color: #515a63;}
   
   .phone::before{  left: 25px;}
 
-
+  .call-no { 
+    padding-left: 35%;
+    width: 40%;
+    display:inline-block;
+    font-size: 24px;
+  }
 
 }
 
@@ -946,6 +964,13 @@ footer { background-color: #515a63;}
   .contact-link:nth-child(2) a{ margin-left: 0;}
 
   .brands figure img { height: 100%;}
+
+  .call-no { 
+    padding-left: 50%;
+    width: 50%;
+    display:inline-block;
+    font-size: 24px;
+  }
 }  
 
 /*media query for 540px starts here*/
@@ -1031,6 +1056,13 @@ footer { background-color: #515a63;}
   figure { height: 100%;}
 
   .brand-control { top: 20%;}
+
+  .call-no { 
+    padding-left: 30%;
+    width: 50%;
+    display:inline-block;
+    font-size: 24px;
+  }
 }  
 
 /*media query for 425px starts here*/
@@ -1068,7 +1100,7 @@ footer { background-color: #515a63;}
   .gmap { width: 80%;}
 
   .submit { 
-    width: 40%;
+    width: 50%;
     margin: 10px 0;
   }
 
@@ -1096,13 +1128,15 @@ footer { background-color: #515a63;}
 
   .contact-link { width: 100%;}
 
-  
-}
-
-/* media query for 320px starts here
-@media only screen and (max-width: 320px) {
-  .icon .emap {
-    right: 20%;
-    left: 20%;
+  .call-no { 
+    padding-left: 40%;
+    width: 50%;
   }
+  
+  .gmap { padding-top: 40px;}
+}
+/* 
+media query for 320px starts here */
+/* @media only screen and (max-width: 320px) {
+
 } */
