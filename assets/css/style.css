@@ -828,9 +828,7 @@ footer { background-color: #515a63;}
     height: 100%;
   }
 
-  .title {
-    font-size: 21px;
-  }
+  .title { font-size: 21px; }
 
   .goal .icon {
     padding: 20px;
