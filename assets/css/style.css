@@ -1,3 +1,5 @@
+
+
 @charset "utf-8";
 /* ==========================================================================
    1. CSS Reset Code
@@ -83,7 +85,8 @@ sub { bottom: -.25em; }
 
 /*for all*/
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: sans-serif;
 }
 
@@ -115,19 +118,25 @@ li {
 
 header { background-color: #414c52;}
 
-nav { display: flex;}
+nav { display: -webkit-box; display: -ms-flexbox; display: flex;}
 
 .logo { padding-right:  7%;}
 
 .navigation {
   width: 62%;
   padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .icons { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
   display: flex;
-  justify-content: right;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .nav-item { margin-right: 6%;}
@@ -284,8 +293,12 @@ nav { display: flex;}
 
 .goals {
   padding-top: 50px ;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .goal {
@@ -406,7 +419,7 @@ nav { display: flex;}
   text-align: center;
 }
 
-.cards { display: flex;}
+.cards { display: -webkit-box; display: -ms-flexbox; display: flex;}
 
 .card { 
   padding: 10px 1% 40px 1%;
@@ -450,7 +463,7 @@ nav { display: flex;}
 /*advice end */
 
 /*more info start*/
-.more-information { display: flex;}
+.more-information { display: -webkit-box; display: -ms-flexbox; display: flex;}
 
 .solutions {
   width: 50%;
@@ -470,7 +483,7 @@ nav { display: flex;}
   padding-bottom: 35px;
   color: #fff;
   font-size: 36px;
-  font-size: 900;
+  font-weight: 900;
   text-transform: capitalize;
 }
 
@@ -540,10 +553,12 @@ nav { display: flex;}
 
 /*contact start*/
 
-form { display: flex;}
+form { display: -webkit-box; display: -ms-flexbox; display: flex;}
 
 .contact {
   padding: 80px 2% 50px 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #cdcdcd;
 }
@@ -630,13 +645,19 @@ footer { background-color: #515a63;}
 
 .locate {
   padding: 20px 0 150px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .contact-links {  
   padding: 102px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact-link {
@@ -671,10 +692,19 @@ footer { background-color: #515a63;}
 .connect-icon:nth-last-child(1) { margin-bottom: 30px;} */
 
 .contact-link { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact-icons { display: none;}
@@ -725,8 +755,13 @@ footer { background-color: #515a63;}
 .get-connect {
   width: 40%;
   padding-right: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .copyright {
@@ -801,7 +836,8 @@ footer { background-color: #515a63;}
   width: 50%;
   padding:0 ;
   display: inline-block;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   overflow: hidden;
 }
 
@@ -836,7 +872,7 @@ footer { background-color: #515a63;}
 
   .brand-control { font-size: 24px;}
 
-  .contact-links { flex-direction: column;}
+  .contact-links { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
 
   .contact-link { 
     margin-right: 0;
@@ -892,8 +928,13 @@ footer { background-color: #515a63;}
   .carousel-title .title { font-size: 16px;}
 
   .goals { 
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: column; 
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   
   .goal { 
@@ -909,7 +950,7 @@ footer { background-color: #515a63;}
 
   .brand-control { font-size: 24px;}
 
-  .contact-links { flex-direction: column;}
+  .contact-links { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
 
   .contact-link { 
     margin-right: 0;
@@ -939,9 +980,16 @@ footer { background-color: #515a63;}
   .phone::before{  left: 25px;}
 
   .cards { 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: column; 
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .card { width: 80%;}
@@ -949,7 +997,10 @@ footer { background-color: #515a63;}
   .card:nth-child(2) { margin: 20px 0;}
 
   .more-information {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .solutions,.learning { 
@@ -1015,13 +1066,13 @@ footer { background-color: #515a63;}
     right:40%;
   }
 
-  .cards { flex-direction: column;}
+  .cards { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
 
   .card:nth-child(2) { margin: 20px 0;}
   
   .brand-control { font-size: 24px;}
 
-  .contact-links { flex-direction: column;}
+  .contact-links { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
 
   .contact-link { 
     margin-right: 0;
@@ -1078,16 +1129,23 @@ footer { background-color: #515a63;}
 
   .title { font-size: 12px;}
 
-  .contact { flex-direction: column;}
+  .contact { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
 
   .personal-details { width: 100%;}
 
   .message { width: 100%;}
 
   .locate { 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: column; 
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .get-connect { 
@@ -1121,7 +1179,9 @@ footer { background-color: #515a63;}
 
   .contact-links { 
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .contact-link { width: 100%;}
@@ -1133,8 +1193,3 @@ footer { background-color: #515a63;}
   
   .gmap { padding-top: 40px;}
 }
-/* 
-media query for 320px starts here */
-/* @media only screen and (max-width: 320px) {
-
-} */
