@@ -669,28 +669,6 @@ footer { background-color: #515a63;}
   /* text-align: center; */
 }
 
-/* .contact-link a{
-  font-size: 21px;
-} */
-
-
-
-/* .contact-icons {
-  width: 20%;
-  padding: 40px;
-  border: 10px solid #737e85;
-  border-radius: 50%;
-  margin-right: 5%;
-  position: relative;
-  background-color: #da6226;
-  font-family: 'FontAwesome';
-  font-weight: 900;
-  font-size: 0;
-  text-align: center;
-}
-
-.connect-icon:nth-last-child(1) { margin-bottom: 30px;} */
-
 .contact-link { 
   display: -webkit-box; 
   display: -ms-flexbox; 
@@ -741,12 +719,13 @@ footer { background-color: #515a63;}
   content: '\f095';
 }
 
-.call-no { 
-  padding-left: 30%;
-  width: 50%;
-  display:inline-block;
-  font-size: 24px;
+.call-us { 
+  width: 100%;
+  padding-left: 50%;
+  display: block;
 }
+
+.call-no {  font-size: 24px;}
 
 
 
@@ -900,12 +879,7 @@ footer { background-color: #515a63;}
   
   .phone::before{  left: 25px;}
 
-  .call-no { 
-    padding-left: 35%;
-    width: 40%;
-    display:inline-block;
-    font-size: 24px;
-  }
+  .call-us {   padding-left: 70%;}
 
 }
 
@@ -935,10 +909,11 @@ footer { background-color: #515a63;}
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+            align-items: center;
   }
   
   .goal { 
-    width: 90%;
+    width: 60%;
     margin: 40px 0;
   }
 
@@ -1014,12 +989,10 @@ footer { background-color: #515a63;}
 
   .brands figure img { height: 100%;}
 
-  .call-no { 
-    padding-left: 50%;
-    width: 50%;
-    display:inline-block;
-    font-size: 24px;
-  }
+  .call-us {   
+    padding-left: 0;
+    text-align: center;
+   }
 }  
 
 /*media query for 540px starts here*/
@@ -1048,22 +1021,22 @@ footer { background-color: #515a63;}
 
   .money::before {
     top: 20px;
-    right:30%;
+    right:25%;
   }
   
   .emap::before {
     top: 20px;
-    right:40%;
+    right:25%;
   }
   
   .graph::before {
     top: 20px;
-    right:40%;
+    right:25%;
   }
   
   .earth::before {
     top: 20px;
-    right:40%;
+    right:25%;
   }
 
   .cards { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
@@ -1192,4 +1165,6 @@ footer { background-color: #515a63;}
   }
   
   .gmap { padding-top: 40px;}
+
+  .goal .icon { left: 25%;}
 }
